@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url('background.jpg');
+     background-size: cover;
+    /* Ensure the image covers the entire background */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    color: #333;
+    /* Text color */
+    font-family: Arial, sans-serif;
+    /* Font style */
+
+
+    color: #333;
+    font-family: Arial, sans-serif;
+
+}
+
+nav {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    background-color: #003366;
+    /* Dark Blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav .logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #00bfff;
+    /* Light Blue */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    /* To avoid navbar overlap */
+    flex-direction: column;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    color: white;
+    background-color: #00bfff;
+    /* Light Blue */
+    padding: 20px 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+label:hover {
+    background-color: #0080ff;
+    /* Darker Blue */
+}
